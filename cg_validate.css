@@ -13,8 +13,8 @@
 
 
 /* Validation Styles */
-/*Displays all input, select, and textarea elements that have the focus with a different background color. */
-input:focus,
+/*Displays all input, select, and textarea elements that have the focus with a different background color. Added the "form>" to the input selector to prevent the submit button (not a direct descendant) from having that background style. */
+form>input:focus,
 select:focus,
 textarea:focus {
     background-color: rgb(245, 245, 140);
